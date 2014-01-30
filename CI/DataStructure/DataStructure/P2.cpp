@@ -57,7 +57,7 @@ std::string convertDtoS(int number)
 }
 
 //find largest sum
-//e.g [6,5,-2,3] return 11 = 6+5
+//e.g [6,5,-12,3] return 11 = 6+5
 int getMaxSum(int arr[],int size,std::vector<int> &res)
 {
 	int maxSum = 0;
