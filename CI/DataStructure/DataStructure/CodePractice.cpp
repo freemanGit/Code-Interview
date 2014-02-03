@@ -135,7 +135,7 @@ static int find_kth_smallest(int arr[], int leftPos, int rightPos, int k)
    if(leftPartPos > targetPos)
 	   return find_kth_smallest(arr,leftPos,leftPartPos,k);
    if(leftPartPos < targetPos)
-	   return find_kth_smallest(arr,leftPartPos+1,rightPos,k);
+	   return find_kth_smallest(arr,leftPartPos+1,rightPos,k-leftPartPos);
 }
 
 
