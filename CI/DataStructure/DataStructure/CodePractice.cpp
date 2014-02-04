@@ -153,7 +153,7 @@ static linkNode *MergeTwoSortedList1(linkNode *l1, linkNode *l2)
 	if(!l2)
 		return l1;
 
-	linkNode *res = new linkNode;
+	linkNode *res;
 
 	if(l1->data<l2->data)
 	{
