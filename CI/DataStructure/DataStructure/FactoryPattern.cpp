@@ -3,8 +3,9 @@
 
 using namespace std;
 
-class Product{
-
+class IProduct{
+   virtual void Func1() = 0;
+   virtual void Func2() = 0;
 };
 
 class CreateFactory{
@@ -40,14 +41,6 @@ class ConcreateProd1 : public Product{
 		int id;
 
     public:
-	   ConcreateProd1()
-	   {
-		  id = 1;
-		  CreateFactory::GetInstance()->RegisterProduct(id, this);
-	   }
-
-	   Product* GetProduct()
-	   {
-		   return CreateFactory::GetInstance()->CreateProduct(id);
-	   }
+	  Func1 () {}
+	  Func2 () {}
 };
